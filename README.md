@@ -1,4 +1,4 @@
-# SAP Expense Tracker & Analytics Dashboard
+# SAP Expense Tracker & Analytics Dashboard (ABAP Cloud + OData V4)
 
 A full-stack Expense Tracker and Analytics Dashboard built using SAP ABAP Cloud, CDS Views, OData V4 Services, SAP S/4HANA 2023, and a modern frontend application developed using Antigravity.
 
@@ -16,6 +16,38 @@ The application allows users to:
 - Analyze expense distributions
 - Consume SAP OData services through a modern UI
 - Integrate SAP backend data with a frontend dashboard
+
+---
+
+## Repository Structure
+
+```text
+SAP-Expense-Tracker-ABAP-Cloud
+│
+├── README.md
+├── Screenshots/
+│   ├── Dashboard.png
+│   ├── expenses.png
+│   ├── add_expense_modal.png
+│   ├── settings.png
+│   ├── zi_expense_cds.png
+│   ├── service_definition.png
+│   ├── service_binding.png
+│   ├── zcategory_master_structure.png
+│   ├── zexpense_tracker_structure.png
+│   ├── zuser_master_table.png
+│   ├── sap_gui_category_master_data.png
+│   ├── sap_gui_expense_tracker_data.png
+│   ├── sap_gui_zcategory_master_structure.png
+│   └── sap_gui_zexpense_tracker_structure.png
+│
+└── Source_Code/
+    ├── Tables/
+    ├── CDS_Views/
+    ├── OData_Services/
+    ├── Documentation/
+    └── Reports/
+```
 
 ---
 
@@ -61,6 +93,39 @@ ABAP Database Tables
 - TypeScript
 - Modern Dashboard UI
 - REST/OData Integration
+
+---
+
+## Source Code Organization
+
+### Tables
+
+Contains custom SAP database tables:
+
+- ZCATEGORY_MASTER
+- ZUSER_MASTER
+- ZEXPENSE_TRACKER
+
+### CDS Views
+
+Contains CDS artifacts used for data modeling and OData exposure:
+
+- ZI_EXPENSE_CDS
+
+### OData Services
+
+Contains service layer objects:
+
+- ZUI_EXPENSE_SRV
+- ZUI_EXPENSE_BIND
+
+### Documentation
+
+Contains architecture and implementation notes.
+
+### Reports
+
+Reserved for future analytical and reporting programs.
 
 ---
 
@@ -291,19 +356,50 @@ Allows configuration of:
 - CDS-Based Data Modeling
 - OData V4 Service Exposure
 - SAP GUI Validation
+- Eclipse ADT Development
 - Frontend Dashboard Integration
-- Expense Analytics
+- Expense Analytics Dashboard
 - Category Management
-- End-to-End SAP Full Stack Architecture
+- CRUD-Based Expense Tracking
+- Full-Stack SAP Application Architecture
+- End-to-End SAP Backend to Frontend Connectivity
+
+---
+
+## Future Enhancements
+
+- User Authentication & Authorization
+- RAP-Based Business Object Implementation
+- Fiori Elements Integration
+- Expense Approval Workflow
+- Real-Time Analytics
+- Budget Tracking Module
+- Export to Excel/PDF
+- Mobile Responsive SAP Fiori UI
 
 ---
 
 ## Author
 
-**Yashashri Penikalapati**
+### Yashashri Penikalapati
 
-B.Tech – Information Technology
-
-MLR Institute of Technology
-
+B.Tech – Information Technology  
+MLR Institute of Technology  
 Hyderabad, India
+
+### Project Highlights
+
+✔ SAP ABAP Cloud Development  
+✔ SAP S/4HANA 2023  
+✔ CDS View Modeling  
+✔ OData V4 Service Development  
+✔ Eclipse ADT Development  
+✔ SAP GUI Data Validation  
+✔ Frontend Integration using Antigravity  
+✔ Full-Stack SAP Application Architecture
+
+---
+
+## License
+
+This project is intended for educational, learning, and portfolio purposes.
